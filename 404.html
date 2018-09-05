@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    
+      GT iOS Club
+    
+  </title>
+  <!-- Required meta tags -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/resources/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="/resources/syntax.css">
+  <link rel="stylesheet" href="/resources/style-1.css">
+  
+  <link href="/resources/icon" rel="stylesheet">
+  <link rel="shortcut icon" href="https://gtios.club/images/favicon.ico">
+</head>
+
+<body>
+  
+    <nav class="navbar navbar-light fixed-top">
+    <div class="my-box">
+        <a class="navbar-brand" href="https://gtios.club/">
+            <img src="/resources/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span id="site-title">GT iOS Club</span>
+        </a>
+        <div class="nav justify-content-end">
+        </div>
+    </div>
+</nav>
+
+  
+
+  <div class="bg no-border e-special">
+    <div class="container">
+        <div class="row">
+            <div class="col lg-8">
+                <img class="devices" src="/resources/site_moved.png">
+            </div>
+            <div class="col-lg-4 opener">
+                <div class="e">
+                    <h1>We've moved.</h1>
+                    <p>The Georgia Tech iOS Club website is now available at <a href="https://gtios.club" id="redirect-url">gtios.club</a>, please bookmark our new site instead. <br><br>Meanwhile, you will be automatically redirected in <element id="second-countdown">3</element> seconds.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container footer">
+    <div class="row">
+        <div class="col-md">
+            <div class="official">
+                <img class="seal" src="/resources/gatech.png">
+                <p class="copyright">GT iOS Club © 2018 ·
+                    <a href="https://github.com/gauravtamhan" target="_blank">Gaurav Tamhan</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="icons">
+                <a href="https://www.facebook.com/groups/gtiosclub/" onclick="openFacebook()" target="_blank">
+                    <img src="/resources/facebook.png">
+                </a>
+                <a href="https://github.com/gtiosclub" target="_blank">
+                    <img src="/resources/github.png">
+                </a>
+                <a href="mailto:hello@gtios.club">
+                    <img src="/resources/email.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/resources/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/resources/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="/resources/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+  <script src="/resources/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="/resources/open-facebook.js"></script>
+
+    <!-- Optional JavaScript -->
+  
+
+  
+  <script type="text/javascript" src="/resources/homepage-carousel.js"></script>
+  
+  <script type="text/javascript">
+
+    document.addEventListener("DOMContentLoaded", function(){
+        document.getElementById("redirect-url").href = newSiteURL();
+    });
+    
+        // console.log('before');
+        console.log('before');
+        setTimeout(function(){
+            document.getElementById("second-countdown").innerHTML = "2";
+        },999);
+        setTimeout(function(){
+            document.getElementById("second-countdown").innerHTML = "1";
+        },1999);
+        setTimeout(function(){
+            document.getElementById("second-countdown").innerHTML = "0";
+        },2999);
+    
+        setTimeout(function(){
+            window.location = newSiteURL();
+            console.log('after');
+        },3500);
+    
+        function newSiteURL() {
+            return window.location.href.replace("http://", "https://").replace("iosgatech.xyz", "gtios.club");
+        }
+    </script>
+
+
+</body></html>
